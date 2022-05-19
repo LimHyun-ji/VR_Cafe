@@ -28,6 +28,6 @@ public class PlayerController : MonoBehaviour
             // 3. 그 방향으로 이동한다.
             // P = P0 + vt
             transform.position += dir * speed * Time.deltaTime;
-        }        
+        }  
     }
 }
