@@ -10,16 +10,18 @@ public class UIManager : MonoBehaviour
     public Button GameStartBtn;
     public Button SettingsBtn;
     public GameObject SettingsPanel;
-    public GameObject player;
+    GameObject player;
 
     public float totalTime = 300; // 전체 시간 제한(초)
     float limitTime; // 남은 시간(초)
     int min;    // 분단위
     float sec;  // 초단위
+    int score;  // 점수
+    int maxScore = 30000;   // 목표 금액
 
     public Slider slTimer;  // 시간 표시 Slider UI
     public Text textTimer;  // 시간 표시 Text UI
-    public Text score;  // score 표시 UI
+    public Text scoreText;  // score 표시 UI
     public GameObject endButton;
     public GameObject successText;
     public GameObject failText;
@@ -44,7 +46,7 @@ public class UIManager : MonoBehaviour
         player.gameObject.GetComponent<MeshRenderer>().enabled=false;
         playerPos = player.transform.position;
 
-        score.text = "0";   // score 초기화
+        scoreText.text = "0";   // score 초기화
     }
 
     void Update()
@@ -81,8 +83,16 @@ public class UIManager : MonoBehaviour
                 textTimer.text = "0초";  // UI 텍스트를 0초로 고정
                 // 버튼, 결과 텍스트 활성화
                 endButton.SetActive(true);
-                successText.SetActive(true);
-                
+
+                if(score >= maxScore)  // 정해진 금액에 도달
+                {
+                    successText.SetActive(true);
+                }
+                else
+                {
+                    failText.SetActive(true);
+                }
+
                 // player, camera 위치 초기화
                 player.transform.position = playerPos;
                 Camera.main.transform.rotation = Quaternion.identity;
