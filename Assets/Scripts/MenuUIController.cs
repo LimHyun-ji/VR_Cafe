@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MenuUIController : MonoBehaviour
 {
-    Text text;
-    public string menu = "";
+    
+    /*public string menu = "";
     public string[] menuList ={"americano",
                             "latte",
                             "caramel",
@@ -19,6 +19,7 @@ public class MenuUIController : MonoBehaviour
                             "salmon",
                             "potato",
                             "toast" };
+    */
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +34,7 @@ public class MenuUIController : MonoBehaviour
 
     void ChangeText()
     {
-        int randomNum = UnityEngine.Random.Range(0, menuList.Length());
+        //int randomNum = UnityEngine.Random.Range(0, menuList.Length());
 
         // 수정예정
        
