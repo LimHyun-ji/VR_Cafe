@@ -10,23 +10,23 @@ public class UIManager : MonoBehaviour
     public Button GameStartBtn;
     public Button SettingsBtn;
     public GameObject SettingsPanel;
-    GameObject player;
+    //GameObject player;
 
-    public float totalTime = 300; // ÀüÃ¼ ½Ã°£ Á¦ÇÑ(ÃÊ)
-    float limitTime; // ³²Àº ½Ã°£(ÃÊ)
-    int min;    // ºÐ´ÜÀ§
-    float sec;  // ÃÊ´ÜÀ§
-    int score;  // Á¡¼ö
-    int maxScore = 30000;   // ¸ñÇ¥ ±Ý¾×
+    public float totalTime = 300; // ï¿½ï¿½Ã¼ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½)
+    float limitTime; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½(ï¿½ï¿½)
+    int min;    // ï¿½Ð´ï¿½ï¿½ï¿½
+    float sec;  // ï¿½Ê´ï¿½ï¿½ï¿½
+    int score;  // ï¿½ï¿½ï¿½ï¿½
+    int maxScore = 30000;   // ï¿½ï¿½Ç¥ ï¿½Ý¾ï¿½
 
-    public Slider slTimer;  // ½Ã°£ Ç¥½Ã Slider UI
-    public Text textTimer;  // ½Ã°£ Ç¥½Ã Text UI
-    public Text scoreText;  // score Ç¥½Ã UI
+    public Slider slTimer;  // ï¿½Ã°ï¿½ Ç¥ï¿½ï¿½ Slider UI
+    public Text textTimer;  // ï¿½Ã°ï¿½ Ç¥ï¿½ï¿½ Text UI
+    public Text scoreText;  // score Ç¥ï¿½ï¿½ UI
     public GameObject endButton;
     public GameObject successText;
     public GameObject failText;
 
-    Vector3 playerPos;
+    //Vector3 playerPos;
 
     // Start is called before the first frame update
     private static UIManager instance;
@@ -42,49 +42,49 @@ public class UIManager : MonoBehaviour
     void Init() 
     {
         instance=this;
-        player=GameObject.FindGameObjectWithTag("Player");
-        player.gameObject.GetComponent<MeshRenderer>().enabled=false;
-        playerPos = player.transform.position;
+        //player=GameObject.FindGameObjectWithTag("Player");
+        //player.gameObject.GetComponent<MeshRenderer>().enabled=false;
+        //playerPos = player.transform.position;
 
-        scoreText.text = "0";   // score ÃÊ±âÈ­
+        scoreText.text = "0";   // score ï¿½Ê±ï¿½È­
     }
 
     void Update()
     {
-        // °ÔÀÓ ÇÃ·¹ÀÌµ¿¾È
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã·ï¿½ï¿½Ìµï¿½ï¿½ï¿½
         if(isGamePlaying)
         {
-            limitTime -= Time.deltaTime;    // ³²Àº ½Ã°£ °¨¼Ò
+            limitTime -= Time.deltaTime;    // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-            // ½½¶óÀÌ´õ °¨¼Ò
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½
             if (slTimer.value > 0.0f)
             {
                 slTimer.value -= Time.deltaTime;
             }
 
-            // ÀüÃ¼ ½Ã°£ÀÌ 60ÃÊº¸´Ù Å¬ ¶§
+            // ï¿½ï¿½Ã¼ ï¿½Ã°ï¿½ï¿½ï¿½ 60ï¿½Êºï¿½ï¿½ï¿½ Å¬ ï¿½ï¿½
             if (limitTime >= 60f)
             {
-                min = (int)limitTime / 60;  // 60À¸·Î ³ª´²¼­ »ý±â´Â ¸òÀ» ºÐ´ÜÀ§·Î
-                sec = limitTime % 60;   // 60À¸·Î ³ª´²¼­ »ý±â´Â ³ª¸ÓÁö¸¦ ÃÊ´ÜÀ§·Î
+                min = (int)limitTime / 60;  // 60ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½
+                sec = limitTime % 60;   // 60ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´ï¿½ï¿½ï¿½ï¿½ï¿½
 
-                textTimer.text = min + "ºÐ " + (int)sec + "ÃÊ";    // UI Ç¥½Ã
+                textTimer.text = min + "ï¿½ï¿½ " + (int)sec + "ï¿½ï¿½";    // UI Ç¥ï¿½ï¿½
             }
 
-            // ÀüÃ¼ ½Ã°£ÀÌ 60ÃÊ ¹Ì¸¸ÀÏ ¶§
+            // ï¿½ï¿½Ã¼ ï¿½Ã°ï¿½ï¿½ï¿½ 60ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½
             else
             {
-                textTimer.text = (int)limitTime + "ÃÊ";  // ÃÊ´ÜÀ§¸¸ ³²µµ·Ï ¼³Á¤
+                textTimer.text = (int)limitTime + "ï¿½ï¿½";  // ï¿½Ê´ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             }
 
-            // ³²Àº ½Ã°£ÀÌ 0º¸´Ù ÀÛ¾ÆÁú ¶§
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ï¿½ï¿½ 0ï¿½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½ ï¿½ï¿½
             if (limitTime <= 0)
             {
-                textTimer.text = "0ÃÊ";  // UI ÅØ½ºÆ®¸¦ 0ÃÊ·Î °íÁ¤
-                // ¹öÆ°, °á°ú ÅØ½ºÆ® È°¼ºÈ­
+                textTimer.text = "0ï¿½ï¿½";  // UI ï¿½Ø½ï¿½Æ®ï¿½ï¿½ 0ï¿½Ê·ï¿½ ï¿½ï¿½ï¿½ï¿½
+                // ï¿½ï¿½Æ°, ï¿½ï¿½ï¿½ ï¿½Ø½ï¿½Æ® È°ï¿½ï¿½È­
                 endButton.SetActive(true);
 
-                if(score >= maxScore)  // Á¤ÇØÁø ±Ý¾×¿¡ µµ´Þ
+                if(score >= maxScore)  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ý¾×¿ï¿½ ï¿½ï¿½ï¿½ï¿½
                 {
                     successText.SetActive(true);
                 }
@@ -93,9 +93,9 @@ public class UIManager : MonoBehaviour
                     failText.SetActive(true);
                 }
 
-                // player, camera À§Ä¡ ÃÊ±âÈ­
-                player.transform.position = playerPos;
-                Camera.main.transform.rotation = Quaternion.identity;
+                // player, camera ï¿½ï¿½Ä¡ ï¿½Ê±ï¿½È­
+                //player.transform.position = playerPos;
+                //Camera.main.transform.rotation = Quaternion.identity;
 
                 isGamePlaying = false;
             }
@@ -104,11 +104,11 @@ public class UIManager : MonoBehaviour
     public void GameStart()
     {
         isGamePlaying=true;
-        player.gameObject.GetComponent<MeshRenderer>().enabled=true;
+        //player.gameObject.GetComponent<MeshRenderer>().enabled=true;
         GameStartBtn.gameObject.SetActive(false);
 
-        limitTime = totalTime;  // ³²Àº ½Ã°£À» ÀüÃ¼ ½Ã°£À¸·Î ÃÊ±âÈ­
-        slTimer.value = totalTime;  // ½Ã°£ Ç¥½Ã Slider °ª ÃÊ±âÈ­
+        limitTime = totalTime;  // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
+        slTimer.value = totalTime;  // ï¿½Ã°ï¿½ Ç¥ï¿½ï¿½ Slider ï¿½ï¿½ ï¿½Ê±ï¿½È­
     }
     public void Pause()
     {
@@ -121,7 +121,7 @@ public class UIManager : MonoBehaviour
     }
     public void Restart()
     {
-        SceneManager.LoadScene( SceneManager.GetActiveScene().name );   //ÇöÀç ¾À ºÒ·¯¿À±â
+        SceneManager.LoadScene( SceneManager.GetActiveScene().name );   //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½
         Init();
     }
     public void OpenSettingPanel()
