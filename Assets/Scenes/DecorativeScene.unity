@@ -22667,8 +22667,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 34.69, y: 96.7}
-  m_SizeDelta: {x: -1800.75, y: -1039.2}
+  m_AnchoredPosition: {x: 20.36, y: 96.7}
+  m_SizeDelta: {x: -1829.41, y: -1039.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1473510838
 MonoBehaviour:
@@ -22684,15 +22684,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: americano
   recipeImage:
-  - {fileID: 21300000, guid: 6fae9cc28df4ff247b954a43fb2301b9, type: 3}
-  - {fileID: 21300000, guid: 8c811bb897c4f504699c6d5ac30aeff5, type: 3}
-  - {fileID: 21300000, guid: fedcf1497782238478d898eed9ccc75c, type: 3}
-  - {fileID: 21300000, guid: cd90df5b1da36e54c9c9c1c71e77fce1, type: 3}
-  - {fileID: 21300000, guid: cfcde8c6544c64a478f62e9eeab7abce, type: 3}
-  - {fileID: 21300000, guid: 16b75122af0661345bc63d2827f62623, type: 3}
-  - {fileID: 21300000, guid: b8036bb4aaddcc34d9ae3202a0fc9898, type: 3}
-  - {fileID: 21300000, guid: dc0d149c4ebce9b4b9b74f015dff1e64, type: 3}
-  - {fileID: 21300000, guid: 1e2005f50cb343747bd300308534ebc5, type: 3}
+  - {fileID: 21300000, guid: 87de854aae23f7b42b2bae4880972800, type: 3}
+  - {fileID: 21300000, guid: 3d32d000e26c45245bb92a217704f8e3, type: 3}
+  - {fileID: 21300000, guid: 331c24bd3ddab744e9ed24b5f77dd22a, type: 3}
+  - {fileID: 21300000, guid: 448908de7aa8049499f1ab1dab388ace, type: 3}
+  - {fileID: 21300000, guid: 0032f8aab2122e7478b44ecfe733b068, type: 3}
+  - {fileID: 21300000, guid: 87b0c711641f1d3438f29b138979a2c2, type: 3}
+  - {fileID: 21300000, guid: ce281cf0601f4c64f801d9217263b0bb, type: 3}
+  - {fileID: 21300000, guid: f017d7035b83f7a4d9a7fcf35954c252, type: 3}
+  - {fileID: 21300000, guid: 4bb9b98bbd372fe4eb1cb63ad7509964, type: 3}
   - {fileID: 21300000, guid: 7051bb27249675049a607c684e5808d3, type: 3}
   - {fileID: 21300000, guid: 783d894cd7e19bf41a52d50163e0be21, type: 3}
   - {fileID: 21300000, guid: 0b5b167d1f2caf044bb4eea1cb0f0ed1, type: 3}
