@@ -3,7 +3,29 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fluid
+  - americano
+  - latte
+  - macchiato
+  - mocha
+  - orangejuice
+  - lemonjuice
+  - strawberryjuice
+  - blueberryjuice
+  - mangojuice
+  - orange
+  - strawberry
+  - blueberry
+  - mango
+  - lemon
+  - potato
+  - salmon
+  - cheese
+  - ham
+  - leaf
+  - bread
+  - sesame_bread
   layers:
   - Default
   - TransparentFX
