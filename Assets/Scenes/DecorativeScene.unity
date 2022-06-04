@@ -22685,9 +22685,9 @@ MonoBehaviour:
   menu: americano
   recipeImage:
   - {fileID: 21300000, guid: 87de854aae23f7b42b2bae4880972800, type: 3}
-  - {fileID: 21300000, guid: 3d32d000e26c45245bb92a217704f8e3, type: 3}
-  - {fileID: 21300000, guid: 331c24bd3ddab744e9ed24b5f77dd22a, type: 3}
-  - {fileID: 21300000, guid: 448908de7aa8049499f1ab1dab388ace, type: 3}
+  - {fileID: 21300000, guid: 88df47ed48eaed748802cc7b8ce0f0db, type: 3}
+  - {fileID: 21300000, guid: c06ef22d0234e3a4eac0dddf6fb496dd, type: 3}
+  - {fileID: 21300000, guid: 6c5d6d4df0b8cf24abbb69cad7d8e3ff, type: 3}
   - {fileID: 21300000, guid: 0032f8aab2122e7478b44ecfe733b068, type: 3}
   - {fileID: 21300000, guid: 87b0c711641f1d3438f29b138979a2c2, type: 3}
   - {fileID: 21300000, guid: ce281cf0601f4c64f801d9217263b0bb, type: 3}
