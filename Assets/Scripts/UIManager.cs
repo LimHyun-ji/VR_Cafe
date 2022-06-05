@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
     float limitTime; // 남은 시간(초)
     int min;    // 분단위
     float sec;  // 초단위
-    public int score;  // 점수
+    int score;  // 점수
     int maxScore = 30000;   // 목표 금액
 
     public Slider slTimer;  // 시간 표시 Slider UI
@@ -28,6 +28,7 @@ public class UIManager : MonoBehaviour
 
     Vector3 playerPos;
 
+    // Start is called before the first frame update
     private static UIManager instance;
 
     public static UIManager Instance()
@@ -45,8 +46,7 @@ public class UIManager : MonoBehaviour
         player.gameObject.GetComponent<MeshRenderer>().enabled=false;
         playerPos = player.transform.position;
 
-        score = 0;   // score 초기화
-        scoreText.text = "0";
+        scoreText.text = "0";   // score 초기화
     }
 
     void Update()
@@ -54,8 +54,6 @@ public class UIManager : MonoBehaviour
         // 게임 플레이동안
         if(isGamePlaying)
         {
-            scoreText.text = "" + score;
-
             limitTime -= Time.deltaTime;    // 남은 시간 감소
 
             // 슬라이더 감소
