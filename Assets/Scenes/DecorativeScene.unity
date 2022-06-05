@@ -12574,7 +12574,11 @@ RectTransform:
   - {fileID: 1513154884}
   - {fileID: 569196447}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 36
+=======
+  m_RootOrder: 37
+>>>>>>> 566f1af3e546fcdf8fa00d12651fe48571b24433
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12598,7 +12602,6 @@ MonoBehaviour:
   SettingsBtn: {fileID: 418362857}
   SettingsPanel: {fileID: 1570680272}
   totalTime: 300
-  score: 0
   slTimer: {fileID: 1401735797}
   textTimer: {fileID: 593910147}
   scoreText: {fileID: 1959713652}
@@ -15681,6 +15684,7 @@ MeshFilter:
     type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 914602005}
   m_Mesh: {fileID: 4300000, guid: 3c8691a473ec0453b8cbea2687e2f120, type: 3}
 --- !u!1 &914860469
@@ -15766,6 +15770,8 @@ MeshFilter:
     type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> 566f1af3e546fcdf8fa00d12651fe48571b24433
   m_GameObject: {fileID: 914860469}
   m_Mesh: {fileID: 4300000, guid: c99109f1aec7349c1b7742ca6cd214e2, type: 3}
 --- !u!1 &916316126
@@ -32340,10 +32346,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beb30ffaabf0dc34ea3a3b8f0608f427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   americano: {fileID: 0}
   mocha: {fileID: 0}
   macchiato: {fileID: 0}
   latte: {fileID: 0}
+=======
+>>>>>>> 566f1af3e546fcdf8fa00d12651fe48571b24433
 --- !u!1 &1961229739
 GameObject:
   m_ObjectHideFlags: 0
