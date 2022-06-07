@@ -8,7 +8,7 @@ public class DistanceController : MonoBehaviour
     public GameObject target;
     public GameObject selectPop;
     private float dist;
-    // Update is called once per frame
+
     void Update()
     {
         dist = Vector3.Distance(player.transform.position, target.transform.position);

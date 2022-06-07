@@ -12,18 +12,6 @@ public class EmogiController : MonoBehaviour
     public float time;
     int num;
 
-    public void Change_Emogi()
-    {
-        
-        
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;

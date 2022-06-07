@@ -6,7 +6,7 @@ public class FoodController : MonoBehaviour
 {
     private Vector3 m_Offset; 
     private float m_ZCoord;
-    private bool isSelected = false; 
+    public bool isSelected = false; 
 
     void OnMouseDown() 
     { 

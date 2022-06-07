@@ -10,7 +10,7 @@ public class CoffeeController : MonoBehaviour
     public GameObject macchiato;
     public GameObject latte;
     public Dropdown drop;
-    // Start is called before the first frame update
+
     void OnMouseDown()
     {
         if (drop.value == 0) {
@@ -22,11 +22,5 @@ public class CoffeeController : MonoBehaviour
         } else if (drop.value == 3) {
             mocha.SetActive(true);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

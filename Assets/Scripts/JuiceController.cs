@@ -11,7 +11,7 @@ public class JuiceController : MonoBehaviour
     public GameObject mango;
     public GameObject blueberry;
     public Dropdown drop;
-    // Start is called before the first frame update
+
     void OnMouseDown()
     {
         if (drop.value == 0) {
@@ -25,11 +25,5 @@ public class JuiceController : MonoBehaviour
         }else if (drop.value == 4) {
             blueberry.SetActive(true);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

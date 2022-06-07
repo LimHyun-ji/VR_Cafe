@@ -26,6 +26,11 @@ TagManager:
   - leaf
   - bread
   - sesame_bread
+  - caramel
+  - choco
+  - bread2
+  - sesame_bread2
+  - egg
   layers:
   - Default
   - TransparentFX

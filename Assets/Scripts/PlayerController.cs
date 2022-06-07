@@ -5,11 +5,15 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed=5;
-    // Start is called before the first frame update
-    void Start()
+
+    AudioSource audioSource;
+    public AudioClip scoreAudio;
+
+    void Awake()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
+
 
     // Update is called once per frame
     void Update()
@@ -29,5 +33,11 @@ public class PlayerController : MonoBehaviour
             // P = P0 + vt
             transform.position += dir * speed * Time.deltaTime;
         }  
+    }
+
+    public void PlaySound()
+    {
+        audioSource.clip = scoreAudio;
+        audioSource.Play();
     }
 }

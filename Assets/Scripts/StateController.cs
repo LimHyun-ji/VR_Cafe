@@ -11,6 +11,8 @@ public class StateController : MonoBehaviour
     public float time;
     int num;
 
+    public ScoreController scoreController;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,30 +26,32 @@ public class StateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
+        if (UIManager.Instance().isGamePlaying)
+        {
+            time += Time.deltaTime;
 
-        num = (int)time;
-        if (num >= 70)
-        {
-            BadE.SetActive(false);
+            num = (int)time;
+            if (num >= 70)
+            {
+                BadE.SetActive(false);
+            }
+            else if (num >= 50)
+            {
+                NormalE.SetActive(false);
+                BadE.SetActive(true);
+            }
+            else if (num >= 30)
+            {
+                GoodE.SetActive(false);
+                NormalE.SetActive(true);
+            }
+            else if (num >= 10)
+            {
+                GoodE.SetActive(true);
+
+            }
+
         }
-        else if (num >= 50)
-        {
-            NormalE.SetActive(false);
-            BadE.SetActive(true);
-        }
-        else if (num >= 30)
-        {
-            GoodE.SetActive(false);
-            NormalE.SetActive(true);
-        }
-        else if (num >= 10)
-        {
-            GoodE.SetActive(true);
-           
-        }
-        
-       
 
     }
     
