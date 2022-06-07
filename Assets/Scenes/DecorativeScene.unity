@@ -11920,6 +11920,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1336489905947600, guid: 69bfec6b391ac93478955620baefaf77, type: 3}
+      propertyPath: m_TagString
+      value: mocha
+      objectReference: {fileID: 0}
     - target: {fileID: 1567847765358894, guid: 69bfec6b391ac93478955620baefaf77, type: 3}
       propertyPath: m_Name
       value: Mocha
@@ -23307,6 +23311,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1560290258390114, guid: 5a755b0cb9b4aed48b79e465163413f2, type: 3}
+      propertyPath: m_TagString
+      value: latte
+      objectReference: {fileID: 0}
     - target: {fileID: 1573329297470402, guid: 5a755b0cb9b4aed48b79e465163413f2, type: 3}
       propertyPath: m_Name
       value: IcedCoffee
@@ -24115,6 +24123,10 @@ PrefabInstance:
     - target: {fileID: 1336489905947600, guid: 69bfec6b391ac93478955620baefaf77, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336489905947600, guid: 69bfec6b391ac93478955620baefaf77, type: 3}
+      propertyPath: m_TagString
+      value: macchiato
       objectReference: {fileID: 0}
     - target: {fileID: 1567847765358894, guid: 69bfec6b391ac93478955620baefaf77, type: 3}
       propertyPath: m_Name
